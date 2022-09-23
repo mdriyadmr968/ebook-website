@@ -14,7 +14,7 @@ body {
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 .container {
-  max-width: 700px;
+  max-width: 400px;
   width: 100%;
   background-color: #fff;
   padding: 25px 30px;
@@ -24,9 +24,10 @@ body {
 .container .title {
   font-size: 25px;
   font-weight: 500;
+  margin-bottom: 5%;
   position: relative;
 }
-.container .title::before {
+/* .container .title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -35,16 +36,15 @@ body {
   width: 30px;
   border-radius: 5px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
-}
-.content form .user-details {
+} */
+/* .content form .user-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0 12px 0;
-}
+} */
 form .user-details .input-box {
   margin-bottom: 15px;
-  width: calc(100% / 2 - 20px);
 }
 form .input-box span.details {
   display: block;
@@ -119,28 +119,4 @@ form .button input {
 form .button input:hover {
   /* transform: scale(0.99); */
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
-}
-@media (max-width: 584px) {
-  .container {
-    max-width: 100%;
-  }
-  form .user-details .input-box {
-    margin-bottom: 15px;
-    width: 100%;
-  }
-  form .category {
-    width: 100%;
-  }
-  .content form .user-details {
-    max-height: 300px;
-    overflow-y: scroll;
-  }
-  .user-details::-webkit-scrollbar {
-    width: 5px;
-  }
-}
-@media (max-width: 459px) {
-  .container .content .category {
-    flex-direction: column;
-  }
 }
